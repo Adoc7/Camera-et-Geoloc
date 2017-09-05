@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item (click)="distance()">Geoloc</ion-item>
+
+  <!--<ion-card>-->
+  <!--<ion-card-content>-->
+    Latest Picture:
+    <img [src]="base64Image" *ngIf="base64Image" />
+  <!--</ion-card-content>-->
+  <!--</ion-card>-->
+  <button ion-button (click)="takePicture()">
+    <ion-icon name="camera">&nbsp;&nbsp;</ion-icon>
+    Take a photo
+  </button>
+  <div   [innerHTML]="html">
+  </div>
+
+
+
+  <!--The world is for you-->
+  <h2>The world is for you</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2\">docs</a>will be your guide.\n"+"
+  </p>
+</ion-content>
